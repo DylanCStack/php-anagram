@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anagram Finder</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Find Your Anagrams!</h1>
+            <form action="/results" method="post">
+                <label for="test_case">Word To Test Against</label>
+                <input id="test_case" name="test_case" type="text">
+                <div>
+                    <label for="control_list">Words You Would Like to Test(Please seperate by comma and space)</label><br>
+                    <textarea id="control_list" name="control_list" type="text" cols="70" rows="5"></textarea>
+                </div>
+                <button type="submit" name="button">Try It!</button>
+            </form>
+        </div>
+    </body>
+</html>

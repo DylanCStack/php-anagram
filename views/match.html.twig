@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anagram Finder</title>
+    </head>
+    <body>
+        <div class="container">
+            {% if matches is not empty %}
+            <h1>Anagram Matches!</h1>
+            <ul>
+                {% for match in matches %}
+                <li>{{ match[0] }} matched
+                    {% if match[1] == 0 %} im{%endif%}perfectly.</li>
+                    {%endfor%}
+            </ul>
+            {%endif%}
+            <p><a href="/">Home</a></p>
+        </div>
+    </body>
+</html>
