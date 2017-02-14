@@ -42,5 +42,15 @@
             $this->assertEquals(true, $result);
         }
 
+        function test_spaced_word_anagram()
+        {
+            $test_Anagram = new Anagram;
+            $input1 = "Care";
+            $input2 = ["race car", "are c", "claptrap", "cake"];
+
+            $result = $test_Anagram->findAnagram($input1, $input2);
+            $this->assertEquals(true, $result);
+        }
+
     }
 ?>

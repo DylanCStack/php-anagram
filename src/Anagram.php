@@ -3,11 +3,11 @@
     {
         function findAnagram($test_case, $control_list)
         {
-            $cleaned_test_case = str_split(strtoupper($test_case));
+            $cleaned_test_case = str_split(str_replace(' ', '', strtoupper($test_case)));
             sort($cleaned_test_case);
             foreach($control_list as $control)
             {
-                $cleaned_control = str_split(strtoupper($control));
+                $cleaned_control = str_split(str_replace(' ', '' ,strtoupper($control)));
                 sort($cleaned_control);
                 $filtered_test_case = array();
                 foreach ($cleaned_test_case as $test_case_letter) {
