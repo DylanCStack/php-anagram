@@ -32,5 +32,15 @@
             $this->assertEquals(true, $result);
         }
 
+        function test_partial_anagram()
+        {
+            $test_Anagram = new Anagram;
+            $input1 = "beard";
+            $input2 = ["Board", "Dear", "Bard", "Baird", "EAR"];
+
+            $result = $test_Anagram->findAnagram($input1, $input2);
+            $this->assertEquals(true, $result);
+        }
+
     }
 ?>
