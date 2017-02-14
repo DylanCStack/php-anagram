@@ -12,5 +12,16 @@
             $result = $test_Anagram->findTautology($input1, $input2);
             $this->assertEquals(true, $result);
         }
+
+        function test_list_tautology()
+        {
+            $test_Anagram = new Anagram;
+            $input1 = "Cake";
+            $input2 = ["Cake", "cupcake", "break", "cowpie"];
+
+            $result = $test_Anagram->findTautology($input1, $input2);
+            $this->assertEquals(true, $result);
+        }
+
     }
 ?>
