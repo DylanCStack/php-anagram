@@ -10,7 +10,7 @@
             $input2 = ["Cake"];
 
             $result = $test_Anagram->findAnagram($input1, $input2);
-            $this->assertEquals(true, $result);
+            $this->assertEquals([["Cake", 1]], $result);
         }
 
         function test_list_tautology()
@@ -20,7 +20,7 @@
             $input2 = ["Cake", "cupcake", "break", "cowpie"];
 
             $result = $test_Anagram->findAnagram($input1, $input2);
-            $this->assertEquals(true, $result);
+            $this->assertEquals([["Cake", 1]], $result);
         }
         function test_list_anagram()
         {
@@ -29,7 +29,7 @@
             $input2 = ["baird", "bread", "break", "bard"];
 
             $result = $test_Anagram->findAnagram($input1, $input2);
-            $this->assertEquals(true, $result);
+            $this->assertEquals([["bread", 1],["bard" , 0]], $result);
         }
 
         function test_partial_anagram()
@@ -39,7 +39,7 @@
             $input2 = ["Board", "Dear", "Bard", "Baird", "EAR"];
 
             $result = $test_Anagram->findAnagram($input1, $input2);
-            $this->assertEquals(true, $result);
+            $this->assertEquals([["Dear", 0],["Bard", 0],["EAR", 0]], $result);
         }
 
         function test_spaced_word_anagram()
@@ -49,7 +49,7 @@
             $input2 = ["race car", "are c", "claptrap", "cake"];
 
             $result = $test_Anagram->findAnagram($input1, $input2);
-            $this->assertEquals(true, $result);
+            $this->assertEquals([["are c", 1]], $result);
         }
 
     }
