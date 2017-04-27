@@ -1,8 +1,8 @@
-#Anagram checker
-###Authored by Dylan Stackhouse & Charles Peden, 2/14/17
-##Description
+# Anagram checker
+### Authored by Dylan Stackhouse & Charles Peden, 2/14/17
+## Description
 A program to check whether a list of words contains an anagram or partial anagram of a given input.
-##Specifications:
+## Specifications:
 1. Program can identify a word as an anagram of itself.  Input: Cake, Cake Output: True;
 2. Program can identify a word as an anagram of itself amongst a list of others.  Input Cake, Cheese, Pie, Cake  Output:  True.
 3. ... a word as an anagram amongst a list of others.  Input:  Beard, Bread, Board, Brad, Baird.  Output:  True
